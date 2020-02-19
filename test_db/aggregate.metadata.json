@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"FitHome.aggregate"}],"uuid":"31eeef7ad455480587072c582aaa2bd4"}
