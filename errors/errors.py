@@ -1,10 +1,14 @@
 import traceback
 import sys
+import logging
+logger = logging.getLogger(__name__)
+
+
 def handle_exception(e):
-    print(f'*******\nERROR: {e}\n*******')
-    print('TRACEBACK: \n*******')
-    exc_type, exc_value, exc_traceback = sys.exc_info()
-    traceback.print_tb(exc_traceback, file=sys.stdout)
+    logger.exception(f'Exception...{e}')
+    # print('TRACEBACK: \n*******')
+    # exc_type, exc_value, exc_traceback = sys.exc_info()
+    # traceback.print_tb(exc_traceback, file=sys.stdout)
 
 
 class MongoConnectError(Exception):
